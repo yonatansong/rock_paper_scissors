@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.pageContainer {
+  min-height: 100%;
+  position: relative;
+}
+header {
+  padding: 10px;
+}
+main {
+  padding: 10px;
+  padding-bottom: 60px; /* Height of the footer */
+}
+main .cards > div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .cards > div > div {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+main .menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .menu .option {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+@keyframes rotateCard {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+.rotateCard {
+  animation-name: rotateCard;
+  animation-duration: 1s;
+}
